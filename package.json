@@ -1,0 +1,23 @@
+{
+  "name": "3nodep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "koa-view": "^2.1.4",
+    "koa-views": "^7.0.1",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.1",
+    "pug": "^3.0.2"
+  }
+}
