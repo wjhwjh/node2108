@@ -22,7 +22,10 @@ app.use(views(path.join(__dirname,'views'), {
     extension: 'pug'
 }));
 
- // 允许跨域，允许所有的请求访问
+ // 允许跨域，允许所有的请求访问，cors同源策略， 后端解决跨域问题
+ /*
+  使用koa的中简件 koa-cors解决跨域问题
+ */
 app.use(async(ctx,next=>{
   await ctx.set('Access-Control-Allow-Origin','*'); //允许通过所有的 
   await next();
