@@ -1,0 +1,17 @@
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.menu-left{
+    flex: 1;
+}
+.menu-right{
+    flex:0 0 10%;
+}
+.menu-list{
+    border-bottom: none;
+}
+.menu-left .layui-tab{
+    margin-bottom: 0;
+}

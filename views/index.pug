@@ -2,6 +2,19 @@ doctype html
 html(lang="zh-CN")
     include common/headmenu.pug
     body 
-        p 这是一个pug页面
+        div(class="menu-wrapper") 
+            div(class="menu-left")
+                div(class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief")
+                    ul(class="layui-tab-title menu-list")
+                        li(class="layui-this") 首页
+                        li 用户管理
+                        li 商品管理
+                    //-div(class="layui-tab-content")   
+            div(class="menu-right") 
+                div(class="login")
+                    span(class="user-name") huizi
+                    span(class="user-img")
+                div(class="unlogin")
+                    span(class="prelogin") 请先登录
         p #{name}
     include common/foot.pug

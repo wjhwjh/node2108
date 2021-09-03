@@ -22,7 +22,11 @@ app.use(views(path.join(__dirname,'views'), {
     extension: 'pug'
 }));
 
- 
+ // 允许跨域，允许所有的请求访问
+app.use(async(ctx,next=>{
+  await ctx.set('Access-Control-Allow-Origin','*'); //允许通过所有的 
+  await next();
+}));
  
 
 app

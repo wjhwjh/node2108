@@ -6,6 +6,8 @@ router.get('/', async (ctx) => {
 })
 
 router.get('/user', async (ctx) => {
-    await ctx.render("list")
+   // await ctx.render("list")
+   ctx.body="{'data':'返回数据'}"
 })
+
 module.exports = router
