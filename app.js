@@ -25,11 +25,14 @@ app.use(views(path.join(__dirname,'views'), {
  // 允许跨域，允许所有的请求访问，cors同源策略， 后端解决跨域问题
  /*
   使用koa的中简件 koa-cors解决跨域问题
+  https://www.cnblogs.com/reeber/p/10727956.html
+  https://www.cnblogs.com/lpl666/p/12881119.html
  */
+/*
 app.use(async(ctx,next=>{
   await ctx.set('Access-Control-Allow-Origin','*'); //允许通过所有的 
   await next();
-}));
+}));*/
  
 
 app

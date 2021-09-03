@@ -11,10 +11,12 @@ html(lang="zh-CN")
                         li 商品管理
                     //-div(class="layui-tab-content")   
             div(class="menu-right") 
-                div(class="login")
-                    span(class="user-name") huizi
-                    span(class="user-img")
-                div(class="unlogin")
-                    span(class="prelogin") 请先登录
+                if islogin 
+                    div(class="login")
+                        span(class="user-name") huizi
+                        span(class="user-img")
+                else 
+                    div(class="unlogin")
+                        span(class="prelogin") 请先登录
         p #{name}
     include common/foot.pug
