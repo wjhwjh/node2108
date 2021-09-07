@@ -17,6 +17,8 @@ html(lang="zh-CN")
                         span(class="user-img")
                 else 
                     div(class="unlogin")
-                        span(class="prelogin") 请先登录
+                        span(class="prelogin") 
+                            a(href="user/login") 请先登录
+        block content
         p #{name}
     include common/foot.pug
